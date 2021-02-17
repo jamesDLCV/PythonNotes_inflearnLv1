@@ -231,14 +231,14 @@ for i in im_str:
 # 슬라이싱, 아주 중요하다.
 str_sl = "Nice Python"
 
-print(len(str_sl))          # 11개.
+print(len(str_sl))          # 11개. (index 0 ~ index 10)
 
 # 슬라이싱 연습
 print(str_sl[0:3])          # Nic
                             # 개수가 아니다. index를 의미한다. 0, 1, 2 index
 # str_sl에서 Python만 출력하고 싶다면 어떻게 하는가?
 print(str_sl[5:])           # [5: 11]과 동일
-print(str_sl[5:10])         # 맨 마지막 index 전까지만 출력.
+print(str_sl[5:10])         # 맨 마지막 index 전까지만 출력. (n-1) <-- 중요!!!!!!!!
 print(str_sl[:])            # Nice Python
 print(str_sl[:len(str_sl)]) # Nice Python, (str[:11])과 동일, 처음부터 10번까지
 # 마직막 부분의 index를 모를 때는 생략을 하거나 len() 함수를 사용한다.
@@ -263,7 +263,7 @@ print(str_sl1[1:-2])             # ood Pyth, index1부터 index-3까지 출력
 print(str_sl1[::2])              # 두 칸씩 뛰면서 가져와라, 처음부터 끝까지
                                  # go yhn, index0 즉 첫 칸은 출력한다.
 print(str_sl1[:-1])              # good Pytho
-print(str_sl1[-1:])              # n
+print(str_sl1[-1:])              # n, 이런 방향으로는 안 쓰는 것 같다. 
 print(str_sl1[::-1])             # nohtyP doog, index-1부터 역순으로 출력한다.
 # 음수는 오른쪽에서 왼쪽으로, -1부터 왼쪽으로.
 # 양수는 왼쪽에서 오른쪽으로, 0부터 오른쪽으로.
@@ -286,4 +286,4 @@ print(chr(122))             # 문자로.
 # 문자형은 복습을 해 주기를 바란다.
 # 인덱싱은 0부터 시작한다.
 # 거꾸로 갈 때는 -1부터 시작한다.
-# 리스트를 알아야 알고리즘 문제를 풀 수 있고 자료 구조까지 볼 수 있다.
+# 리스트를 알아야 알고리즘 문제를 풀 수 있고 자료 구조도 볼 수 있다.
