@@ -30,7 +30,7 @@
 # 6. 리스트 삭제
 
 ### 선언
-a = []  # 빈 리스트는 이렇게 대괄호로 선언한다.
+a = []                  # 빈 리스트는 이렇게 대괄호로 선언한다.
 print(type(a))          # <class 'list'>
 
 b = list()              # 빈 리스트를 이렇게도 선언할 수 있다.
@@ -358,6 +358,48 @@ print(a)                    # []
 # list a의 원소를 뒤에서부터 거꾸로 값을 반환하면서 삭제한다.
 # 원소 모두가 삭제되면 while 반복문은 실행이 멈춘다.
 # while문의 실행이 끝나면 list a 안에는 아무 것도 없게 된다.
+
+## 원소의 위치를 알려 달라.
+# find(), 문자열만 찾을 수 있다. 숫자는 안 된다.
+# 변수.find(찾을 문자, 시작점, 종료점)
+# 찾는 값이 없으면 -1을 출력한다.
+# 문자열에서만 사용이 가능하다.
+# list, tuple, dictionary 자료형에서는 사용할 수 없다.
+# 사용하면 AttributeError 발생.
+
+string = 'abcdefg'          # 문자
+print(string.find('d'))     # 3
+
+# index(), 문자열, 숫자 모두 찾을 수 있다.
+# 변수.index(찾을 문자, 시작점, 종료점)
+# 찾는 값이 없으면 ValueError 발생
+# 문자열, list, tuple 자료형에서 사용 가능.
+# dictionary 자료형에서 사용 불가능.
+# 사용하면 AttributeError 발생.
+
+a = [1, 2, 3, 4, 5]
+string = 'abcdefg'
+print(string.index('d'))    # 3
+print(a.index(4))           # 3
+
+## 위에서 다룬 list 함수.
+# a.append(10)
+# a.sort()
+# a.reverse()
+# a.index(3)                # 숫자, 문자의 위치 알려 주기
+# a.insert(2, 7)
+# del a[6]
+# a.remove(10)              # 많이 사용
+# a.pop()  /  a.pop(2)
+# a.count(4)                # 문자, 숫자의 개수 세기
+# a.extend(ex)              # ex 리스트를 a 리스트에 추가한다.
+# a.find('b')               # 문자의 위치 알려 주기
+
+## 다루지 않은 list 함수,
+# join('p')
+# a.lstrip  /  a.rstring  /  a.strip  # 공백 지우기
+# split   # 문자열 바꾸기
+# 이외에도 많은 함수가 있을 것이다.
 
 ### 리스트 사용법
 # 1. 리스트 선언
