@@ -1,0 +1,13 @@
+1. gpp-compiler
+2. script
+3. seti-ui (theme)
+4. kite
+5. font 변경
+   settings > Editor > Font Size
+                     > Tap Length: 4
+6. console font size
+   File > Stylesheet > add
+
+.script-view .line {
+ font-size: 25px;
+}
