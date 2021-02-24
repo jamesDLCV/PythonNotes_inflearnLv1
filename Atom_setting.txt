@@ -11,3 +11,5 @@
 .script-view .line {
  font-size: 25px;
 }
+
+7. atom-gdb-debugger
